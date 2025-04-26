@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="phone" class="com.spring.SpringDiByObject.Phone">
+   <property name="pno" value="265685585629"/>
+</bean>
+<!-- <bean id="person" class="com.spring.SpringDiByObject.Person">
+  <property name="pname" value="Nikhil"/>
+  <property name="phone" ref="phone" />
+</bean> -->
+<!-- Name would be same to phone  -->
+<!-- <bean id="person" class="com.spring.SpringDiByObject.Person" autowire="byName">
+  <property name="pname" value="Nikhil"/>
+</bean> -->
+<!-- Type of data -->
+<bean id="persn" class="com.spring.SpringDiByObject.Person" autowire="byType">
+  <property name="pname" value="Nikhil"/>
+</bean>
+
+</beans>
